@@ -22,17 +22,12 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Article
-import androidx.compose.material.icons.filled.EmojiPeople
-import androidx.compose.material.icons.filled.Festival
+import androidx.compose.material.icons.filled.Bookmarks
+import androidx.compose.material.icons.filled.DownloadDone
 import androidx.compose.material.icons.filled.Fireplace
-import androidx.compose.material.icons.filled.ListAlt
+import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.Movie
 import androidx.compose.material.icons.filled.Museum
-import androidx.compose.material.icons.filled.MusicNote
-import androidx.compose.material.icons.filled.MusicVideo
-import androidx.compose.material.icons.filled.People
-import androidx.compose.material.icons.filled.PermMedia
 import androidx.compose.material.icons.filled.Tour
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
@@ -90,36 +85,29 @@ fun AppDrawer(
             modifier = Modifier.padding(horizontal = 28.dp, vertical = 24.dp)
         )
         NavigationDrawerItem(
-            label = { Text(stringResource(id = R.string.concert_title)) },
-            icon = { Icon(Icons.Filled.MusicNote, null) },
+            label = { Text(stringResource(id = R.string.home_title)) },
+            icon = { Icon(Icons.Filled.Home, null) },
             selected = currentRoute == JetnewsDestinations.HOME_ROUTE,
             onClick = { navigateToHome(); closeDrawer() },
             modifier = Modifier.padding(NavigationDrawerItemDefaults.ItemPadding)
         )
         NavigationDrawerItem(
-            label = { Text(stringResource(id = R.string.Performance_title)) },
-            icon = { Icon(Icons.Filled.People, null) },
+            label = { Text(stringResource(id = R.string.favorites_title)) },
+            icon = { Icon(Icons.Filled.Bookmarks, null) },
             selected = currentRoute == JetnewsDestinations.INTERESTS_ROUTE,
             onClick = { navigateToInterests(); closeDrawer() },
             modifier = Modifier.padding(NavigationDrawerItemDefaults.ItemPadding)
         )
         NavigationDrawerItem(
-            label = { Text(stringResource(id = R.string.Exhibition_title)) },
-            icon = { Icon(Icons.Filled.Museum, null) },
+            label = { Text(stringResource(id = R.string.downloads_title)) },
+            icon = { Icon(Icons.Filled.DownloadDone, null) },
             selected = currentRoute == JetnewsDestinations.INTERESTS_ROUTE,
             onClick = { navigateToInterests(); closeDrawer() },
             modifier = Modifier.padding(NavigationDrawerItemDefaults.ItemPadding)
         )
         NavigationDrawerItem(
-            label = { Text(stringResource(id = R.string.TV_Movie_title)) },
-            icon = { Icon(Icons.Filled.Movie, null) },
-            selected = currentRoute == JetnewsDestinations.INTERESTS_ROUTE,
-            onClick = { navigateToInterests(); closeDrawer() },
-            modifier = Modifier.padding(NavigationDrawerItemDefaults.ItemPadding)
-        )
-        NavigationDrawerItem(
-            label = { Text(stringResource(id = R.string.Tour_title)) },
-            icon = { Icon(Icons.Filled.Tour, null) },
+            label = { Text(stringResource(id = R.string.hot_title)) },
+            icon = { Icon(Icons.Filled.Fireplace, null) },
             selected = currentRoute == JetnewsDestinations.INTERESTS_ROUTE,
             onClick = { navigateToInterests(); closeDrawer() },
             modifier = Modifier.padding(NavigationDrawerItemDefaults.ItemPadding)

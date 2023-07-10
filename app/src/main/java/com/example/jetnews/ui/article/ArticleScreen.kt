@@ -177,18 +177,18 @@ private fun TopAppBar(
     CenterAlignedTopAppBar(
         title = {
             Row {
-                Image(
-                    painter = painterResource(id = R.drawable.icon_article_background),
-                    contentDescription = null,
-                    modifier = Modifier
-                        .clip(CircleShape)
-                        .size(36.dp)
-                )
-                Text(
-                    text = stringResource(R.string.published_in, title),
-                    style = MaterialTheme.typography.labelLarge,
-                    modifier = Modifier.padding(start = 8.dp)
-                )
+//                Image(
+//                    painter = painterResource(id = R.drawable.icon_article_background),
+//                    contentDescription = null,
+//                    modifier = Modifier
+//                        .clip(CircleShape)
+//                        .size(36.dp)
+//                )
+//                Text(
+//                    text = stringResource(R.string.published_in, title),
+//                    style = MaterialTheme.typography.labelLarge,
+//                    modifier = Modifier.padding(start = 8.dp)
+//                )
             }
         },
         navigationIcon = navigationIconContent,

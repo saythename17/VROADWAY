@@ -157,7 +157,7 @@ private fun PlayButton(modifier: Modifier = Modifier) {
     Box(
         modifier = modifier
             .fillMaxWidth()
-            .heightIn(min = 240.dp)
+            .heightIn(min = 320.dp)
             .wrapContentWidth(align = Alignment.CenterHorizontally)
             .wrapContentHeight(align = Alignment.CenterVertically)
     ) {
@@ -166,7 +166,7 @@ private fun PlayButton(modifier: Modifier = Modifier) {
             imageVector = Icons.Filled.PlayArrow,
 //            imageVector = Icons.Filled.Download,
             contentDescription = stringResource(R.string.cd_text_settings),
-            modifier = modifier.size(80.dp).padding(16.dp),
+            modifier = modifier.size(100.dp).padding(16.dp),
             tint = colorResource(id = R.color.icon_play_button)
         )
     }
@@ -185,7 +185,7 @@ private fun CircularProgressAnimated(modifier: Modifier = Modifier){
         strokeWidth = 2.dp,
         color = colorResource(id = R.color.circle_download_indicator),
         progress = progressAnimationValue,
-        modifier = modifier.size(80.dp).background(colorResource(id = R.color.icon_play_button_bg), CircleShape),
+        modifier = modifier.size(100.dp).background(colorResource(id = R.color.icon_play_button_bg), CircleShape),
     )
 }
 

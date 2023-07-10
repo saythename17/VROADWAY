@@ -109,7 +109,10 @@ fun SettingsTextComp(
                     // current value shown
                 }
             }
-            Divider(color = Color.White)
+            Divider(
+                color = Color.White,
+                thickness = 0.5.dp
+            )
         }
     }
 }
@@ -171,6 +174,6 @@ fun SettingsTextCompPreview(){
     SettingsTextComp(
         name = R.string.Settings,
         settingIcon = SettingIcon.DrawableResIcon(R.drawable.ic_jetnews_bookmark),
-        iconDesc = R.string.Exhibition_title,
+        iconDesc = R.string.Settings,
     )
 }

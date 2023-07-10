@@ -15,7 +15,7 @@
 <resources>
     <!-- Status bar -->
     <color name="black30">#4D000000</color>
-    <color name="dark_gray">#FD7D7D</color>
+    <color name="dark_gray">#3D3D3D</color>
     <color name="icon_play_button">#B2FFFFFF</color>
     <color name="icon_play_button_bg">#803A3A3A</color>
     <color name="circle_download_indicator">#80FFFFFF</color>

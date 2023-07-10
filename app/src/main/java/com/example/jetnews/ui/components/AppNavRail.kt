@@ -68,8 +68,8 @@ fun AppNavRail(
         NavigationRailItem(
             selected = currentRoute == JetnewsDestinations.INTERESTS_ROUTE,
             onClick = navigateToInterests,
-            icon = { Icon(Icons.Filled.ListAlt, stringResource(R.string.Performance_title)) },
-            label = { Text(stringResource(R.string.Performance_title)) },
+            icon = { Icon(Icons.Filled.ListAlt, stringResource(R.string.favorites_title)) },
+            label = { Text(stringResource(R.string.favorites_title)) },
             alwaysShowLabel = false
         )
         NavigationRailItem(

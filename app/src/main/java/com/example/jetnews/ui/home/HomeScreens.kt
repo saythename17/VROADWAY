@@ -98,6 +98,7 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.example.jetnews.R
+import com.example.jetnews.data.Category
 import com.example.jetnews.data.Result
 import com.example.jetnews.data.posts.impl.BlockingFakePostsRepository
 import com.example.jetnews.model.Post
@@ -490,6 +491,21 @@ private fun FullScreenLoading() {
  */
 @Composable
 private fun PostListTopSection(post: Post, navigateToArticle: (String) -> Unit) {
+    val categories = listOf(
+        Category(1,"Concert"),
+        Category(2,"Performance"),
+        Category(3, "Exhibition"),
+        Category(4, "TV & Movie"),
+        Category(5, "Tour")
+    )
+    val selectedCategory = categories.first()
+
+    CategoryTabs(
+        categories = categories,
+        selectedCategory = selectedCategory,
+        onCategorySelected = {}
+    )
+
     TitleSection()
     Text(
         modifier = Modifier.fillMaxSize(),
@@ -498,6 +514,7 @@ private fun PostListTopSection(post: Post, navigateToArticle: (String) -> Unit) 
         textAlign = TextAlign.Center,
     )
     TitleSection()
+
     PostCardTop(
         post = post,
         modifier = Modifier.clickable(onClick = { navigateToArticle(post.id) })

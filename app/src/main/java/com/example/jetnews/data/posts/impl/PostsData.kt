@@ -1038,8 +1038,8 @@ val main_post = Post(
         contentSize = "523MB"
     ),
     paragraphs = paragraphsPost4,
-    imageId = R.drawable.post_svt,
-    imageThumbId = R.drawable.post_04_thumb
+    imageId = R.drawable.post_main_thumb,
+    imageThumbId = R.drawable.post_main_thumb
 )
 
 val posts: PostsFeed =

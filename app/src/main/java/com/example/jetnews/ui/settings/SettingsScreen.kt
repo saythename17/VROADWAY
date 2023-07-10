@@ -115,7 +115,7 @@ fun VRPlaySettingGroups() {
         SettingsTextComp(
             name = R.string.wifi_only,
             settingIcon = SettingIcon.ImageVectorIcon(Icons.Filled.Wifi),
-            iconDesc = R.string.Exhibition_title,
+            iconDesc = R.string.Settings,
 //                    state = vm.textPreference.collectAsState(),
 //                    onSave = { finalText -> vm.saveText(finalText) },
 //                    onCheck = { text -> vm.checkTextInput(text) },
@@ -124,7 +124,7 @@ fun VRPlaySettingGroups() {
         SettingsTextComp(
             name = R.string.change_hmd,
             settingIcon = SettingIcon.ImageVectorIcon(Icons.Sharp.QrCode),
-            iconDesc = R.string.Exhibition_title,
+            iconDesc = R.string.Settings,
         )
     }
 }
@@ -135,17 +135,17 @@ fun UserSettingGroups() {
         SettingsTextComp(
             name = R.string.login,
             settingIcon = SettingIcon.ImageVectorIcon(Icons.Filled.Login),
-            iconDesc = R.string.Exhibition_title,
+            iconDesc = R.string.Settings,
         )
         SettingsTextComp(
             name = R.string.purchase_history,
             settingIcon = SettingIcon.ImageVectorIcon(Icons.Sharp.Wallet),
-            iconDesc = R.string.Exhibition_title,
+            iconDesc = R.string.Settings,
         )
         SettingsTextComp(
             name = R.string.review,
             settingIcon = SettingIcon.ImageVectorIcon(Icons.Sharp.Send),
-            iconDesc = R.string.Exhibition_title,
+            iconDesc = R.string.Settings,
         )
     }
 }
@@ -156,25 +156,25 @@ fun BoardsGroup() {
         SettingsTextComp(
             name = R.string.notices,
             settingIcon = SettingIcon.ImageVectorIcon(Icons.Filled.Notifications),
-            iconDesc = R.string.Exhibition_title,
+            iconDesc = R.string.Settings,
         )
 
         SettingsTextComp(
             name = R.string.guide,
             settingIcon = SettingIcon.ImageVectorIcon(Icons.Sharp.Book),
-            iconDesc = R.string.Exhibition_title,
+            iconDesc = R.string.Settings,
         )
 
         SettingsTextComp(
             name = R.string.license,
             settingIcon = SettingIcon.ImageVectorIcon(Icons.Sharp.LibraryAdd),
-            iconDesc = R.string.Exhibition_title,
+            iconDesc = R.string.Settings,
         )
 
         SettingsTextComp(
             name = R.string.app_share,
             settingIcon = SettingIcon.ImageVectorIcon(Icons.Sharp.Share),
-            iconDesc = R.string.Exhibition_title,
+            iconDesc = R.string.Settings,
         )
     }
 }
